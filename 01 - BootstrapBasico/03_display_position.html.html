@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso de Bootstrap - Arquivo Base</title>
+    <title>Curso de Bootstrap - Display & Position</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
@@ -11,6 +11,68 @@
   <body>
     <div class="container">
       <h1 class="mb-5">Display & Position</h1>
+
+      <!-- Display None -->
+      <p class="d-none">Este texto não será exibido!</p>
+
+      <br /><br />
+
+      <!-- Display Inline -->
+      <p class="d-inline">Este texto é inline!</p>
+      <p class="d-inline">Este texto é inline!</p>
+
+      <br /><br />
+
+      <!-- Display Block -->
+      <span class="d-block">Este span é um bloco!</span>
+      <span class="d-block">Este span é um bloco!</span>
+
+      <br /><br />
+
+      <!-- Display Block -->
+      <span class="d-inline-block" style="width: 500px"
+        >Este span é um bloco!</span
+      >
+      <span class="d-inline-block">Este span é um bloco!</span>
+
+      <br /><br />
+
+      <!-- Ocultar em SM Screens -->
+      <div class="d-none d-md-block">
+        Este elemento não será exibido em telas pequenas
+      </div>
+
+      <br /><br />
+
+      <!-- Ocultar em Screens MD ou Maiores -->
+      <div class="d-block d-md-none">
+        Este elemento não será exibido em telas md ou maiores
+      </div>
+
+      <br /><br />
+
+      <!-- Positioning -->
+
+      <!-- Position Static -->
+      <div class="position-static">Este texto está estático</div>
+
+      <br /><br />
+
+      <div
+        class="position-relative"
+        style="height: 200px; width: 200px; background: #ccc"
+      >
+        <p class="position-absolute end-0 bottom-0" style="top: 80px">Hey</p>
+      </div>
+
+      <br /><br />
+
+      <!-- Position Fixed -->
+      <p class="position-fixed">Este texto está fixo</p>
+      <br /><br />
+
+      <p class="fixed-top text-end">Este texto está fixo no top</p>
+      <p class="fixed-bottom text-end">Este texto está fixo no bottom</p>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
